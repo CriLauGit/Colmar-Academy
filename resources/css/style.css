@@ -1,0 +1,125 @@
+header {
+    top: 0;
+    position: fixed;
+    height: 64px;
+    background-color: white;
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li a {
+    text-decoration: none;
+}
+
+.banner {
+    background-color: lightgray;
+    width: 100%;
+    top: 64px;
+    position: relative;
+}
+
+.button-container button {
+    background-color: grey;
+    width: 80%;
+    height: 40px;
+}
+
+.button-container button a {
+    padding: 8px;
+}
+
+.button-container {
+    width: 100%;
+    }
+
+@media  (max-width: 600px) {
+    header {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .text {
+        display: none;
+    }
+    
+    .name {
+        display: none;
+    }
+
+    .banner img {
+        width: 100%;
+    }
+
+    .banner_info {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 0 16px;
+    }
+    
+    .banner_info h1 {
+        padding: 32px 0;
+        margin: 0;
+    }
+
+    .banner_info p {
+        margin-top: 0;
+        margin-bottom: 24px;
+    }
+
+    .button-container {
+        width: 100%;
+        text-align: center;
+        padding-bottom: 32px;
+    }
+    
+}
+
+@media screen and (min-width: 600px) { 
+    #logo {
+        margin-left: 24px;
+        position: absolute;
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    #colmar {
+        font-weight: bold;
+    }
+
+    .name {
+        position: absolute;
+        margin-left: 50px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 20px;
+    }
+
+    nav {
+        padding-right: 24px;
+        float: right;
+        font-size: 20px;
+    }
+
+    nav li, .text {
+        display: inline;
+    }
+
+    #icon {
+        display: none;
+    }
+
+    .banner {
+        display: flex;
+        align-items: center;
+    }
+
+    .banner img {
+        width: 60%;
+        padding: 32px 24px;
+    }
+
+
+}
