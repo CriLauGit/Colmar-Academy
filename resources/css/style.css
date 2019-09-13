@@ -215,6 +215,8 @@ li a {
 
     .right-side {
         width: 40%;
+        border-left: 1px solid gray;
+        box-sizing: border-box;
     }
 
     .orientation, .campus, .lecture {
@@ -225,8 +227,7 @@ li a {
     .orientation img, .campus img, .lecture img {
         width: 35%;
         height: auto;
-        padding-top: 16px;
-        padding-left: 16px;
+        padding: 16px 16px;
     }
 
     .details p {
@@ -236,5 +237,10 @@ li a {
 
     .details h3, a, p {
         margin: 0;
+    }
+
+    .campus {
+        border-top: 1px solid lightgrey;
+        border-bottom: 1px solid lightgrey;
     }
 }
