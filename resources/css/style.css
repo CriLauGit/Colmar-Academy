@@ -1,3 +1,5 @@
+/*General style*/
+
 header {
     top: 0;
     position: fixed;
@@ -35,6 +37,8 @@ li a {
     width: 100%;
     }
 
+/*Mobile style*/
+
 @media  (max-width: 600px) {
     header {
         display: flex;
@@ -64,7 +68,7 @@ li a {
         margin: 0;
     }
 
-    .banner_info p {
+    .banner_info h2 {
         margin-top: 0;
         margin-bottom: 24px;
     }
@@ -74,8 +78,70 @@ li a {
         text-align: center;
         padding-bottom: 32px;
     }
+
+    .desktop {
+        display: none;
+    }
+
+    .practice-advice {
+        display: none;
+    }
+
+    .information {
+        position: relative;
+        margin-top: 64px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .information img {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .orientation img {
+        padding-top: 16px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .orientation h3, p, a {
+        padding-left: 32px;
+    }
+
+    .orientation {
+        padding-bottom: 64px;
+    }
     
+
+    .campus img {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .campus h3, p, a {
+        padding-left: 32px;
+    }
+
+    .campus {
+        padding-bottom: 64px;
+    }
+
+    .lecture img {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .lecture h3, p, a {
+        padding-left: 32px;
+    }
+
+    .lecture {
+        padding-bottom: 32px;
+    }
 }
+
+/*Desktop style*/
 
 @media screen and (min-width: 600px) { 
     #logo {
