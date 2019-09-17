@@ -38,6 +38,16 @@ li a {
     width: 100%;
     }
 
+.courses-title, .thesis-title {
+    width: 100%;
+    text-align: center;
+    padding-top: 32px; 
+}
+
+.courses-title h2, .thesis-title h2 {
+    margin: 0;
+}
+
 /*Mobile style*/
 
 @media  (max-width: 600px) {
@@ -88,11 +98,16 @@ li a {
         display: none;
     }
 
-    .information {
+    .information, .reimagine-urban {
         position: relative;
-        margin-top: 64px;
         width: 100%;
         box-sizing: border-box;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .information {
+        margin-top: 64px;
     }
 
     .information img {
@@ -100,13 +115,18 @@ li a {
         padding-right: 16px;
     }
 
-    .orientation img {
+    .reimagine-urban video {    
+        width: 100%;
+        object-fit: contain;
+    }
+
+    .orientation img, .fisma img {
         padding-top: 16px;
         width: 100%;
         box-sizing: border-box;
     }
 
-    .orientation h3, p, a {
+    .orientation h3, .orientation p, .orientation a, .fisma h3, .fisma p {
         padding-left: 32px;
     }
 
@@ -115,16 +135,16 @@ li a {
     }
     
 
-    .campus img {
+    .campus img, .now-and-than img {
         width: 100%;
         box-sizing: border-box;
     }
 
-    .campus h3, p, a {
+    .campus h3, .campus p, .campus a, .now-and-than h3, .now-and-than p {
         padding-left: 32px;
     }
 
-    .campus {
+    .campus, .now-and-than {
         padding-bottom: 64px;
     }
 
@@ -139,6 +159,44 @@ li a {
 
     .lecture {
         padding-bottom: 32px;
+    }
+
+    .courses-title, .thesis-title {
+        padding-bottom: 16px;
+    }
+
+    .desktop-course {
+        display: none;
+    }
+
+    .courses {
+        padding-bottom: 32px;
+    }
+
+    .course {
+        background-color: gray;
+        margin: 8px 16px;
+    }
+
+    .course h3 {
+        padding: 16px 16px 24px 16px;
+    }
+
+    .thesis .right-side {
+        display: none;
+    }
+
+    .footer-li {
+        display: none;
+    }
+
+    footer {
+        margin-top: 24px;
+    }
+
+    footer p {
+        padding: 16px 16px 0 16px;
+        margin-bottom: 0;
     }
 }
 
@@ -192,14 +250,17 @@ li a {
         display: none;
     }
 
-    .information {
+    .information, .thesis {
         display: flex;
-        margin-top: 64px;
         position: relative;
         width: 100%;
     }
 
-    .practice-advice {
+    .information {
+        margin-top: 64px;
+    }
+
+    .practice-advice, .reimagine-urban {
         box-sizing: border-box;
         width: 60%;
         padding: 32px 24px;
@@ -209,7 +270,16 @@ li a {
         width: 100%;
     }
 
-    .orientation {
+    .reimagine-urban video {
+        width: 100%;
+    }
+
+    .practice-advice h2, .practice-advice p, .reimagine-urban h2, .reimagine-urban p {
+        margin-top: 32px;
+        margin-bottom: 24px;
+    }
+
+    .orientation, .fisma {
         padding-top: 16px;
     }
 
@@ -219,12 +289,12 @@ li a {
         box-sizing: border-box;
     }
 
-    .orientation, .campus, .lecture {
+    .orientation, .campus, .lecture, .fisma, .now-and-than {
         display: flex;
         align-items: center;
     }
 
-    .orientation img, .campus img, .lecture img {
+    .orientation img, .campus img, .lecture img, .fisma img, .now-and-than img {
         width: 35%;
         height: auto;
         padding: 16px 16px;
@@ -239,8 +309,70 @@ li a {
         margin: 0;
     }
 
-    .campus {
+    .campus, .now-and-than {
         border-top: 1px solid lightgrey;
         border-bottom: 1px solid lightgrey;
+    }
+
+    .courses-container {
+        background-color: lightgrey;
+        box-sizing: border-box;
+    }
+
+    .courses {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-left: 56px;
+        box-sizing: border-box;
+        margin-right: 56px;
+    }
+
+    .courses-title, .thesis-title {
+        padding-bottom: 16px;
+    }
+
+    .course {
+        margin: 16px 16px;
+        box-sizing: border-box;
+        width: 29%;
+        background-color: white;
+    }
+
+    .course img {
+        width: 100%;
+    }
+
+    .course h3 {
+        margin-top: 16px;
+        margin-bottom: 16px; 
+    }
+
+    .desktop-course p {
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+    footer p {
+        float: left;
+        padding-top: 16px;
+        margin-left: 24px;
+    }
+
+    .footer-li {
+        list-style-type: none;
+        float: right;
+        margin: 0;
+        padding-top: 16px;
+        margin-right: 24px;
+    }   
+
+    .footer-li li {
+        display: inline;
+
     }
 }
